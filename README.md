@@ -1,6 +1,6 @@
 # 模拟器极限助手前端部分
 
-> 以下是构建模拟器极限助手前端页面的node scripts
+> 以下是构建前端页面的node scripts
 
 ## Build Setup
 
@@ -24,7 +24,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 `vue 2.0` `webpack 2.0` `less` `eslint` `axios`
 
 # 项目介绍
-> 自有模拟器极限助手中福利和活动的内嵌页，一共三个内嵌页，h5与安卓的通讯方式为window.external对象上的方法
+> 项目为三个内嵌页，h5与安卓的通讯方式为window.external对象上的方法
 
 # 项目文档结构
 ``` bash
