@@ -1,0 +1,96 @@
+@import './variable.less';
+@import './normal.less';
+html,body{
+  font-family: 'Microsoft YaHei';
+}
+
+// 最外层容器
+.container{
+  margin: 0 20px;
+}
+// 最上面倒计时
+.tip-time{
+  margin-top: -.05rem;
+  margin-bottom: .04rem;
+  height: .45rem;
+  line-height: 20px;
+  text-align: center;
+  .icon-clock{
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    background: url('../img/clock.png') center center no-repeat;
+  }
+  span{
+    position: relative;
+    top: -.2rem;
+    left: -.35rem;
+    font-size: .16rem;
+    color: @clock-color;
+  }
+}
+
+//游戏图片
+.game-img{
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+//游戏简介
+.game-info{
+  .game-title{
+    height: 30px;
+    line-height: 20px;
+    border-bottom: 1px solid @split-line-color;
+    .game-title-info{
+      // font-size: .19rem;
+      font-size: .13rem; // code review
+      margin-left: -.1rem;
+    }
+    .game-title-desc{
+      font-size: .15rem;
+      color:@clock-color;
+    }
+  }
+  .info-title{
+    margin-top: 14px;
+    font-size: .19rem;
+  }
+  .info-item{
+    margin-top: 10px;
+   li{
+     line-height: .3rem;
+     height: .36rem;
+     font-size: .16rem;
+     color: @desc-color;
+   }
+  }
+  .tip{
+    margin-top: 10px;
+    line-height: .2rem;
+    font-size:.16rem;
+    letter-spacing: .01rem;
+    color: @tip-color;
+  }
+}
+
+@media (max-width:350px) {
+  .game-title-info{
+    font-size: .1rem;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in below version 2.1.8 */ {
+  opacity: 0
+}
+
+
+
+
+
+
